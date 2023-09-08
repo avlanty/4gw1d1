@@ -1,6 +1,7 @@
 body {
     background: #BDBDBD;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 div {
@@ -25,17 +26,40 @@ div.post img {
     width: 100%;
 }
 
+div.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 div.post .post-header div:first-child {
-    display: inline-block;
-    width: 80%;
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding-left: 20px;
 }
 
 div.post .post-header div:last-child {
     display: inline-block;
     width: 20%;
     padding: 10px;
+    padding-right: 20px;
     text-align: right;
-    color: gray;
+}
+
+div.post .icons-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3em;
+    padding-left: 0.8em;
+}
+
+div.post .icons-header div:first-child {
+    display: flex;
+}
+
+div.post .icons-header div:last-child {
+    display: flex;
 }
 
 div.post h2, div.post p {
